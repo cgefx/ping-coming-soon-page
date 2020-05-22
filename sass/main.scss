@@ -1,0 +1,11 @@
+@import './abstracts/theme';
+@import './abstracts/media';
+@import './base/global';
+@import './components/button';
+@import './components/layout';
+
+body {
+	font-family: $font-family-body;
+	color: $color-black;
+	background: $color-white;
+}

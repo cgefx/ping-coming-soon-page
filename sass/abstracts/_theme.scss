@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+//Fonts
+$font-family-body: 'Karla', sans-serif;
+$font-size-default: 1.6rem;
+
+// Primary Colors
+$color-primary: rgb(42, 178, 175);
+$color-primary-light: rgba(42, 178, 175, 0.8);
+$color-secondary: hsl(71, 73%, 54%);
+
+// Neutral Colors
+$color-white: #fff;
+$color-black: #000;
+$color-neutral-dark: hsl(218, 22%, 67%);
+$color-neutral-light: hsl(204, 43%, 93%);
+
+// Shadows
+$box-shadow: 0px 10px 25px 1px rgba($color-neutral-dark, 0.4);
+
+// Border radius
+$border-radius-md: 9px;
+$border-radius-sm: 4px;
+
+//Typography
+.p {
+	font-size: $font-size-default;
+}
+
+.h1 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.h2 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.h3 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.h4 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+// Text Colors
+.txt-wh {
+	color: $color-white;
+}
+
+.txt-dk {
+	color: $color-neutral-dark;
+}
+
+.txt-p {
+	color: $color-primary;
+}
+
+.txt-sec {
+	color: $color-secondary;
+}
+
+// Fill Colors
+.bg-wh {
+	background-color: $color-white;
+}
+
+.bg-lt {
+	background-color: $color-neutral-light;
+}
+
+.bg-p {
+	background-color: $color-primary;
+}
+
+.bg-plt {
+	background-color: $color-primary-light;
+}
+
+.bg-sec {
+	background-color: $color-secondary;
+}
+
+// Shadows
+.shadow-dk {
+	box-shadow: $box-shadow;
+}
+
+// Borders
+.br-sm {
+	border-radius: $border-radius-sm;
+}
+
+.br-md {
+	border-radius: $border-radius-md;
+}
