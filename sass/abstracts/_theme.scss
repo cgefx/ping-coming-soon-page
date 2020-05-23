@@ -1,100 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
 //Fonts
-$font-family-body: 'Karla', sans-serif;
-$font-size-default: 1.6rem;
+$font-family-body: 'Libre Franklin', sans-serif;
+$font-size-default: 2rem;
 
 // Primary Colors
-$color-primary: rgb(42, 178, 175);
-$color-primary-light: rgba(42, 178, 175, 0.8);
-$color-secondary: hsl(71, 73%, 54%);
+$color-primary: hsl(223, 87%, 63%);
+$color-primary-50: hsla(223, 87%, 63%, 0.5);
+$color-secondary: hsl(223, 100%, 88%);
 
 // Neutral Colors
 $color-white: #fff;
 $color-black: #000;
-$color-neutral-dark: hsl(218, 22%, 67%);
+$color-neutral-gray: hsl(0, 0%, 59%);
+$color-neutral-dark: hsl(209, 33%, 12%);
+$color-neutral-dark-50: hsla(209, 33%, 12%, 0.5);
 $color-neutral-light: hsl(204, 43%, 93%);
 
 // Shadows
-$box-shadow: 0px 10px 25px 1px rgba($color-neutral-dark, 0.4);
+$box-shadow-dark: 0px 10px 25px $color-neutral-dark-50;
+$box-shadow-primary: 0px 10px 25px 1px $color-primary-50;
+
+// Feedback Colors
+$color-alert: hsl(354, 100%, 66%);
 
 // Border radius
 $border-radius-md: 9px;
 $border-radius-sm: 4px;
 
-//Typography
+// Typography
+body {
+	font-size: $font-size-default;
+	font-family: $font-family-body;
+	line-height: 1.65;
+}
+
 .p {
 	font-size: $font-size-default;
+	margin-bottom: 1.15em;
 }
 
 .h1 {
-	font-size: 1.8rem;
-	font-weight: 700;
+	font-size: 3.052em;
+	margin: 2.75rem 0 1.05rem;
+	line-height: 1.15;
+	margin-top: 0;
 }
 
 .h2 {
-	font-size: 1.8rem;
-	font-weight: 700;
+	font-size: 2.441em;
+	margin: 2.75rem 0 1.05rem;
 }
 
 .h3 {
-	font-size: 1.8rem;
-	font-weight: 700;
+	font-size: 1.953em;
+	margin: 2.75rem 0 1.05rem;
 }
 
 .h4 {
-	font-size: 1.8rem;
+	font-size: 1.563em;
+	margin: 2.75rem 0 1.05rem;
+}
+
+.h5 {
+	font-size: 1.25em;
+	margin: 2.75rem 0 1.05rem;
+}
+
+.txt-small {
+	font-size: 0.8em;
+}
+
+// Text weights
+.txt-300 {
+	font-weight: 300;
+}
+.txt-600 {
+	font-weight: 600;
+}
+.txt-700 {
 	font-weight: 700;
 }
 
 // Text Colors
-.txt-wh {
+.cw {
 	color: $color-white;
 }
 
-.txt-dk {
+.cd {
 	color: $color-neutral-dark;
 }
 
-.txt-p {
+.cl {
+	color: $color-neutral-light;
+}
+
+.cp {
 	color: $color-primary;
 }
 
-.txt-sec {
+.cs {
 	color: $color-secondary;
 }
 
 // Fill Colors
-.bg-wh {
+.bg-w {
 	background-color: $color-white;
 }
 
-.bg-lt {
+.bg-l {
 	background-color: $color-neutral-light;
+}
+
+.bg-d {
+	background-color: $color-neutral-dark;
 }
 
 .bg-p {
 	background-color: $color-primary;
 }
 
-.bg-plt {
-	background-color: $color-primary-light;
+.bg-p50 {
+	background-color: $color-primary-50;
 }
 
-.bg-sec {
+.bg-s {
 	background-color: $color-secondary;
 }
 
 // Shadows
-.shadow-dk {
-	box-shadow: $box-shadow;
+.shadow-d {
+	box-shadow: $box-shadow-dark;
+}
+
+.shadow-p {
+	box-shadow: $box-shadow-primary;
 }
 
 // Borders
-.br-sm {
+.br-s {
 	border-radius: $border-radius-sm;
 }
 
-.br-md {
+.br-m {
 	border-radius: $border-radius-md;
 }
