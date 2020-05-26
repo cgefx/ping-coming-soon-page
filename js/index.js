@@ -14,6 +14,5 @@ function checkEmail(input) {
 
 form.addEventListener('submit', function (e) {
 	e.preventDefault();
-	console.log('hello from event listener');
 	checkEmail(email);
 });
