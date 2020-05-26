@@ -1,8 +1,9 @@
 .container {
-	max-width: 1200px;
-	padding: 5rem;
+	max-width: 642px;
+	height: 100vh;
 	margin: 0 auto;
 	overflow: hidden;
+	border: 1px solid green;
 }
 
 .center-full {
@@ -13,16 +14,6 @@
 	transform: translate(-50%, -50%);
 }
 
-.row {
-	display: flex;
-	align-items: center;
-}
-
-.column {
-	display: flex;
-	flex-direction: column;
-}
-
 .flex {
 	display: flex;
 	flex-direction: column;
@@ -30,6 +21,50 @@
 
 	@include respond(bp600) {
 		flex-direction: row;
-		justify-content: stretch;
+		align-content: stretch;
 	}
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	align-items: center;
+}
+
+// SPACING
+
+.mt-80 {
+	margin-top: 8rem;
+}
+
+.mb-36 {
+	margin-bottom: 3.6rem;
+}
+
+.mb-32 {
+	margin-bottom: 3.2rem;
+}
+
+.mb-24 {
+	margin-bottom: 2.4rem;
+}
+
+.mb-64 {
+	margin-bottom: 6.4rem;
+}
+
+.pb-24 {
+	padding-bottom: 2.4rem;
+}
+
+.pb-36 {
+	padding-bottom: 3.6rem;
 }

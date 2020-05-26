@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/4abdfac325.js"
+			crossorigin="anonymous"
+		></script>
 		<link
 			rel="shortcut icon"
 			type="image/png"
@@ -12,25 +16,61 @@
 		<title>Ping Coming Soon</title>
 	</head>
 
-	<body class="bg-d">
-		<div class="container center-full shadow-p">
-			<h1 class="h1 cw">Hello World</h1>
-			<h2 class="h2 cp">Hello World</h2>
-			<h3 class="h3 cl">Hello World</h3>
-			<h4 class="h4 cd">Hello World</h4>
-			<p class="p">
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo harum
-				odio quibusdam accusantium placeat optio omnis minus saepe ullam culpa
-				minima sapiente a magnam beatae odit, aliquam dolores possimus quis?
-			</p>
-			<h2 class="h2 txt-300">Project Text</h2>
-			<p class="txt-s">
-				We are launching soon! Subscribe and get notified Notify Me &copy;
-				Copyright Ping. All rights reserved.
-			</p>
-			<p class="p">
-				useless change to see why github is not tracking contributions
-			</p>
+	<body>
+		<div class="container column flex-center">
+			<!-- Header -->
+			<img class="mb-36" src="./images/logo.svg" alt="Ping Logo" />
+			<h1 class="h5 color-gray mb-24">
+				We are launching <span class="color-dark text-700">soon!</span>
+			</h1>
+			<h5 class="p text-small color-dark mb-32">
+				Subscribe and get notified
+			</h5>
+			<!-- Form -->
+			<form id="form" class="form flex mb-64">
+				<input
+					type="email"
+					class="form__input border-secondary border-radius-24 text-small"
+					id="email"
+					placeholder="Your email address"
+				/>
+				<small class="form__error-message text-x-small color-alert text-italic"
+					>Please provide a valid email address</small
+				>
+				<button
+					type="submit"
+					class="form__button btn bg-primary color-white border-radius-24 text-600 text-small shadow-primary"
+				>
+					Notify Me
+				</button>
+			</form>
+			<!-- Main -->
+			<main>
+				<img
+					class="section__product"
+					src="./images/illustration-dashboard.png"
+					alt="product dashboard"
+				/>
+			</main>
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="footer__icons flex row">
+					<div class="footer__icon">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<div class="footer__icon">
+						<i class="fab fa-twitter"></i>
+					</div>
+					<div class="footer__icon">
+						<i class="fab fa-instagram"></i>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<small class="text-x-small color-gray">
+						&copy; Copyright Ping. All rights reserved.
+					</small>
+				</div>
+			</footer>
 		</div>
 
 		<script src="./js/index.js"></script>

@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
-//Fonts
+//FONTS
 $font-family-body: 'Libre Franklin', sans-serif;
 $font-size-default: 2rem;
 
-// Primary Colors
+// PRIMARY COLORS
 $color-primary: hsl(223, 87%, 63%);
 $color-primary-50: hsla(223, 87%, 63%, 0.5);
 $color-secondary: hsl(223, 100%, 88%);
 
-// Neutral Colors
+// NEUTRAL COLORS
 $color-white: #fff;
 $color-black: #000;
 $color-neutral-gray: hsl(0, 0%, 59%);
@@ -17,18 +17,18 @@ $color-neutral-dark: hsl(209, 33%, 12%);
 $color-neutral-dark-50: hsla(209, 33%, 12%, 0.5);
 $color-neutral-light: hsl(204, 43%, 93%);
 
-// Shadows
+// FEEDBACK COLORS
+$color-alert: hsl(354, 100%, 66%);
+
+// SHADOWS
 $box-shadow-dark: 0px 10px 25px $color-neutral-dark-50;
 $box-shadow-primary: 0px 10px 25px 1px $color-primary-50;
 
-// Feedback Colors
-$color-alert: hsl(354, 100%, 66%);
-
-// Border radius
-$border-radius-md: 9px;
+// BORDER RADIUS
+$border-radius-24: 24px;
 $border-radius-sm: 4px;
 
-// Typography
+// TYPOGRAPHY
 body {
 	font-size: $font-size-default;
 	font-family: $font-family-body;
@@ -37,7 +37,7 @@ body {
 
 .p {
 	font-size: $font-size-default;
-	margin-bottom: 1.15em;
+	// margin-bottom: 1.15em;
 }
 
 .h1 {
@@ -49,99 +49,120 @@ body {
 
 .h2 {
 	font-size: 2.441em;
-	margin: 2.75rem 0 1.05rem;
+	// margin: 2.75rem 0 1.05rem;
 }
 
 .h3 {
 	font-size: 1.953em;
-	margin: 2.75rem 0 1.05rem;
+	// margin: 2.75rem 0 1.05rem;
 }
 
 .h4 {
 	font-size: 1.563em;
-	margin: 2.75rem 0 1.05rem;
+	// margin: 2.75rem 0 1.05rem;
 }
 
 .h5 {
 	font-size: 1.25em;
-	margin: 2.75rem 0 1.05rem;
+	// margin: 2.75rem 0 1.05rem;
 }
 
-.txt-small {
-	font-size: 0.8em;
+.text-small {
+	font-size: 0.7em;
 }
 
-// Text weights
-.txt-300 {
+.text-x-small {
+	font-size: 0.6em;
+}
+
+// TYPOGRAPHY - Text styles
+.text-300 {
 	font-weight: 300;
 }
-.txt-600 {
+.text-600 {
 	font-weight: 600;
 }
-.txt-700 {
+.text-700 {
 	font-weight: 700;
 }
 
-// Text Colors
-.cw {
-	color: $color-white;
+.text-italic {
+	font-style: italic;
 }
 
-.cd {
+// TYPOGRAPHY - Text Colors
+.color-dark {
 	color: $color-neutral-dark;
 }
 
-.cl {
+.color-white {
+	color: $color-white;
+}
+
+.color-gray {
+	color: $color-neutral-gray;
+}
+
+.color-light {
 	color: $color-neutral-light;
 }
 
-.cp {
+.color-primary {
 	color: $color-primary;
 }
 
-.cs {
+.color-secondary {
 	color: $color-secondary;
 }
 
-// Fill Colors
-.bg-w {
-	background-color: $color-white;
+.color-alert {
+	color: $color-alert;
 }
 
-.bg-l {
-	background-color: $color-neutral-light;
-}
-
-.bg-d {
+// FILL COLORS
+.bg-dark {
 	background-color: $color-neutral-dark;
 }
 
-.bg-p {
+.bg-white {
+	background-color: $color-white;
+}
+
+.bg-light {
+	background-color: $color-neutral-light;
+}
+
+.bg-primary {
 	background-color: $color-primary;
 }
 
-.bg-p50 {
+.bg-primary-50 {
 	background-color: $color-primary-50;
 }
 
-.bg-s {
+.bg-secondary {
 	background-color: $color-secondary;
 }
 
-// Shadows
-.shadow-d {
+// BOX SHADOWS
+.shadow-dark {
 	box-shadow: $box-shadow-dark;
 }
 
-.shadow-p {
+.shadow-primary {
 	box-shadow: $box-shadow-primary;
 }
 
-// Borders
-.br-s {
+// BORDER STYLES
+
+.border-secondary {
+	border: 1px solid $color-secondary;
+}
+
+.border-radius-sm {
 	border-radius: $border-radius-sm;
 }
 
-.br-m {
-	border-radius: $border-radius-md;
+.border-radius-24 {
+	border-radius: $border-radius-24;
 }
