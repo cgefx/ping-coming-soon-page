@@ -17,54 +17,70 @@
 	</head>
 
 	<body>
-		<div class="container column flex-center">
-			<!-- Header -->
-			<img class="mb-36" src="./images/logo.svg" alt="Ping Logo" />
-			<h1 class="h5 color-gray mb-24">
-				We are launching <span class="color-dark text-700">soon!</span>
-			</h1>
-			<h5 class="p text-small color-dark mb-32">
-				Subscribe and get notified
-			</h5>
-			<!-- Form -->
-			<form id="form" class="form flex mb-64">
-				<input
-					type="email"
-					class="form__input border-secondary border-radius-24 text-small"
-					id="email"
-					placeholder="Your email address"
-				/>
-				<small class="form__error-message text-x-small color-alert text-italic"
-					>Please provide a valid email address</small
-				>
-				<button
-					type="submit"
-					class="form__button btn bg-primary color-white border-radius-24 text-600 text-small shadow-primary"
-				>
-					Notify Me
-				</button>
-			</form>
+		<div class="container">
+			<!-- CTA -->
+			<div class="cta flex-column flex-center">
+				<img class="cta__brand-logo" src="./images/logo.svg" alt="Ping Logo" />
+
+				<h1 class="cta__heading h3 color-gray">
+					We are launching
+					<span class="color-dark text-700">soon!</span>
+				</h1>
+				<h5 class="cta__sub-heading h5 color-dark">
+					Subscribe and get notified
+				</h5>
+				<!-- Form -->
+				<form id="form" class="form">
+					<div class="form__input-group">
+						<input
+							type="email"
+							class="form__input border-secondary border-radius-24 text-small"
+							id="email"
+							placeholder="Your email address"
+						/>
+						<small
+							class="form__error-message text-x-small color-alert text-italic"
+							>Please provide a valid email address</small
+						>
+					</div>
+					<button
+						type="submit"
+						class="form__button btn bg-primary color-white border-radius-24 text-600 text-small shadow-primary"
+					>
+						Notify Me
+					</button>
+				</form>
+			</div>
+
 			<!-- Main -->
-			<main>
+
+			<div class="product">
 				<img
-					class="section__product"
+					class="product__image"
 					src="./images/illustration-dashboard.png"
 					alt="product dashboard"
 				/>
-			</main>
+			</div>
 			<!-- Footer -->
 			<footer class="footer">
-				<div class="footer__icons flex row">
-					<div class="footer__icon">
-						<i class="fab fa-facebook-f"></i>
+				<div class="footer__icons">
+					<div class="footer__icon-wrapper">
+						<a class="footer__link" href="#">
+							<i class="fab fa-facebook-f footer__icon"></i>
+						</a>
 					</div>
-					<div class="footer__icon">
-						<i class="fab fa-twitter"></i>
+					<div class="footer__icon-wrapper">
+						<a class="footer__link" href="#">
+							<i class="fab fa-twitter footer__icon"></i>
+						</a>
 					</div>
-					<div class="footer__icon">
-						<i class="fab fa-instagram"></i>
+					<div class="footer__icon-wrapper">
+						<a class="footer__link" href="#">
+							<i class="fab fa-instagram footer__icon"></i>
+						</a>
 					</div>
 				</div>
+
 				<div class="footer__copyright">
 					<small class="text-x-small color-gray">
 						&copy; Copyright Ping. All rights reserved.
